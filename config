@@ -1,0 +1,7 @@
+frame_capture_period=2
+analysis_length=20
+ocr_language=en
+video_url=https://www.youtube.com/watch?v=bu7h_md33So
+qc_enabled=True
+qc_captures=10
+output_folder=/tmp/ocr-analysis
