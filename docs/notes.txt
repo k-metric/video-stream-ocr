@@ -1,0 +1,21 @@
+Synopsis
+Detect the number of frames that have a question mark in a video stream.
+
+Name comes from:
+https://en.wikipedia.org/wiki/Yellow_journalism
+
+Requirements
+- May run for a long time (maybe a day). So should be memory efficient.
+-
+
+Dependencies
+
+- CV library based on OpenCV v4
+  https://github.com/hybridgroup/gocv
+
+- OCR library based on Tesseract OCR:
+  https://github.com/otiai10/gosseract
+
+
+Links
+https://stackoverflow.com/questions/60011730/extracting-frames-from-hls-stream-in-python
