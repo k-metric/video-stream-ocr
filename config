@@ -1,7 +1,8 @@
 frame_capture_period=2
-analysis_length=20
-ocr_language=en
-video_url=https://www.youtube.com/watch?v=bu7h_md33So
+analysis_length=10
+ocr_language=kan
+video_url=https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1626655700/ei/dHf0YN76KOmHz7sP86ixiAw/ip/49.206.13.85/id/jdJoOhqCipA.100/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/hls_chunk_host/r5---sn-5jucgv5qc5oq-cagk.googlevideo.com/playlist_duration/30/manifest_duration/30/vprv/1/playlist_type/DVR/hcs/ir/initcwndbps/9920/mh/-l/mm/44/mn/sn-5jucgv5qc5oq-cagk/ms/lva/mv/m/mvi/5/pl/21/rmhost/r3---sn-5jucgv5qc5oq-cagk.googlevideo.com/shardbypass/yes/dover/11/keepalive/yes/fexp/24001373,24007246/mt/1626633868/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,playlist_duration,manifest_duration,vprv,playlist_type/sig/AOq0QJ8wRQIgdXjshMPScP4_iibQf9Gxkw00FTuKkb-xEuCF36T32eUCIQCKPy3uyVOSfxVp8aTpJrW8Yh-zPm-NFl9Mp2e_nGsxoA%3D%3D/lsparams/hls_chunk_host,hcs,initcwndbps,mh,mm,mn,ms,mv,mvi,pl,rmhost,shardbypass/lsig/AG3C_xAwRQIhAMvUie_eUEfwK_CX22m2pUvXVcSWEl0me9hrORPszYktAiBHYra362nFZuhty3Qj7wpIDNgccMCWtf2EaHhcMip1FQ%3D%3D/playlist/index.m3u8
 qc_enabled=True
 qc_captures=10
-output_folder=/tmp/ocr-analysis
+output_folder=/data/ocr-analysis
+text_match=?

@@ -58,10 +58,11 @@ if __name__ == '__main__':
 
         # Convert color from BGR to RGB for Tesseract
         img_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        ocr_text = pytesseract.image_to_string(img_rgb)
+        ocr_text = pytesseract.image_to_string(img_rgb, lang=config.options['ocr_language'])
 
         with open(config.options['output_folder'] + os.sep + str(current_time) + '.txt', 'w') as file:
             file.write(ocr_text)
+        cv2.imwrite(config.options['output_folder'] + os.sep + str(current_time) + '.jpeg', frame, None)
 
         # Store image periodically for quality control.
         if config.options['qc_enabled'] and end_time % time.time() < config.options['frame_capture_period']:
@@ -71,7 +72,9 @@ if __name__ == '__main__':
                 file.write(ocr_text)
 
         print(cap.get(cv2.CAP_PROP_POS_MSEC))
+        print(current_time)
         time.sleep(config.options['frame_capture_period'])
+        # cv2.waitKey(config.options['frame_capture_period'] * 1000)
         if current_time > end_time:
             break
     cap.release()
