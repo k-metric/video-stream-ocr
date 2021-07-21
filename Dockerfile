@@ -20,8 +20,8 @@ RUN cd /tmp && \
     wget https://github.com/tesseract-ocr/tessdata/raw/master/kan.traineddata && \
     mv kan.traineddata /usr/share/tesseract-ocr/4.00/tessdata/
 
-ADD requirements.txt /opt/yellow-news/
-WORKDIR /opt/yellow-news/
+ADD requirements.txt /opt/video-stream-ocr/
+WORKDIR /opt/video-stream-ocr/
 RUN pip3 install -r requirements.txt
 
 COPY config ./

@@ -10,8 +10,9 @@ def config_parse():
     p.add('--ocr_language', required=True, type=str, help='Language for Tesseract OCR')
     p.add('--qc_enabled', required=True, type=bool, help='Enable saving images for quality control')
     p.add('--qc_captures', required=True, type=int, help='The number of images to capture for quality control')
+    p.add('--require_evidence', required=True, type=bool, help='Save snapshot when search terms are found')
     p.add('--output_folder', required=True, type=str, help='directory to write results to')
-    p.add('--text_match', required=True, type=str, help='comma separated strings to look for in the OCR text')
+    p.add('--search_terms', required=True, type=str, help='comma separated strings to look for in the OCR text')
     p.add('-v', help='verbose', action='store_true')
     return vars(p.parse_args())
 
