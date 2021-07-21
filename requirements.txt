@@ -5,3 +5,4 @@ opencv-python == 4.5.3.56
 pytesseract	== 0.3.8
 pytube == 10.9.2
 setuptools == 57.2.0
+pafy==0.5.5
