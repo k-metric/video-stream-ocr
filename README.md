@@ -1,6 +1,7 @@
 # video-stream-ocr
 
 Captures a video stream from Youtube and detects text in frames periodically.
+
 Originally intended to detect question marks (?) in TV news streams to assess their factuality.
 
 ## Dependencies
